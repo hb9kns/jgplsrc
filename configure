@@ -131,7 +131,7 @@ cat <<___ >Makefile
 #          make changes in configure, not here
 
 # want -Wno-incompatible-pointer-types but that needs gcc 5
-CFLAGS= -D_UNIX64 -fPIC -g -fno-strict-aliasing -DNOASM
+CFLAGS= -D__linux__ -fPIC -g -fno-strict-aliasing -DNOASM
 
 LIB=a.o ab.o af.o ai.o am.o am1.o amn.o ao.o ap.o ar.o as.o au.o c.o   \
     ca.o cc.o cd.o cf.o cg.o ch.o cip.o cl.o cp.o cpdtsp.o cr.o crs.o  \
